@@ -1,4 +1,4 @@
-# Python Social Auth - Django
+# Python Social Auth - Django - Mongoengine Storage
 
 Python Social Auth is an easy to setup social authentication/registration
 mechanism with support for several frameworks and auth providers.
@@ -8,8 +8,8 @@ mechanism with support for several frameworks and auth providers.
 This is the [Django](https://www.djangoproject.com/) component of the
 [python-social-auth ecosystem](https://github.com/python-social-auth/social-core),
 it implements the needed functionality to integrate
-[python-social-auth-core](https://github.com/python-social-auth/social-core)
-in a Django based project.
+[social-auth-core](https://github.com/python-social-auth/social-core)
+in a Django based project when using [Mongoengine](http://mongoengine.org/) storage.
 
 ## Django version
 
@@ -25,7 +25,7 @@ Project documentation is available at http://python-social-auth.readthedocs.org/
 ## Setup
 
 ```shell
-$ pip install python-social-auth-app-django
+$ pip install social-auth-app-django-mongoengine
 ```
 
 ## Contributing

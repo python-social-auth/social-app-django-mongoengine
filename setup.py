@@ -11,17 +11,16 @@ def load_requirements():
     return open(join(dirname(__file__), 'requirements.txt')).readlines()
 
 setup(
-    name='python-social-auth-app-django',
-    version=__import__('social_django').__version__,
+    name='social-auth-app-django-mongoengine',
+    version=__import__('social_django_mongoengine').__version__,
     author='Matias Aguirre',
     author_email='matiasaguirre@gmail.com',
-    description='Python Social Authentication, Django integration.',
+    description='Python Social Authentication, Mongoengine Django integration.',
     license='BSD',
-    keywords='django, social auth',
-    url='https://github.com/python-social-auth/social-app-django',
+    keywords='django, social auth, mongoengine',
+    url='https://github.com/python-social-auth/social-app-django-mongoengine',
     packages=[
-        'social_django',
-        'social_django.migrations'
+        'social_django_mongoengine'
     ],
     long_description=long_description(),
     install_requires=load_requirements(),
