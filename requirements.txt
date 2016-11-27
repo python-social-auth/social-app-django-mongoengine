@@ -1,3 +1,2 @@
-django-mongoengine
 social-auth-app-django
 social-auth-storage-mongoengine
