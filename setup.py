@@ -8,7 +8,12 @@ def long_description():
     return open(join(dirname(__file__), 'README.md')).read()
 
 def load_requirements():
-    return open(join(dirname(__file__), 'requirements.txt')).readlines()
+    lines = open(join(dirname(__file__), 'requirements.txt')).readlines()
+    return [line for line in lines if not line.startswith('-e')]
+
+def load_dependency_links():
+    lines = open(join(dirname(__file__), 'requirements.txt')).readlines()
+    return [line for line in lines if line.startswith('-e')]
 
 setup(
     name='social-auth-app-django-mongoengine',
@@ -24,6 +29,7 @@ setup(
     ],
     long_description=long_description(),
     install_requires=load_requirements(),
+    dependency_linkes=load_dependency_links(),
     classifiers=[
         'Development Status :: 4 - Beta',
         'Topic :: Internet',
