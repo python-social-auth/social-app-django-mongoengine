@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/python-social-auth/social-app-django-mongoengine/commits/master)
 
+### Changed
+- Removed usage of set/get current strategy methods
+
 ## [0.2.0](https://github.com/python-social-auth/social-app-django/releases/tag/0.2.0) - 2016-12-28
 
 ### Changed
