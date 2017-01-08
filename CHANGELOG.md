@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/python-social-auth/social-app-django-mongoengine/commits/master)
 
+### Added
+- Added partial pipeline db storage solution
+
 ### Changed
 - Removed usage of set/get current strategy methods
 

@@ -12,6 +12,7 @@ from social_mongoengine.storage import MongoengineUserMixin, \
                                        MongoengineAssociationMixin, \
                                        MongoengineNonceMixin, \
                                        MongoengineCodeMixin, \
+                                       MongoenginePartialMixin, \
                                        BaseMongoengineStorage
 
 
@@ -63,11 +64,17 @@ class Code(Document, MongoengineCodeMixin):
     pass
 
 
+class Partial(Document, MongoenginePartialMixin):
+    """Partial pipeline data"""
+    pass
+
+
 class DjangoStorage(BaseMongoengineStorage):
     user = UserSocialAuth
     nonce = Nonce
     association = Association
     code = Code
+    partial = Partial
 
     @classmethod
     def is_integrity_error(cls, exception):
