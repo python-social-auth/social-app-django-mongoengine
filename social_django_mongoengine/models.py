@@ -31,7 +31,7 @@ def _get_user_model():
         return module_member(custom_model)
 
     try:
-        from django_mongoengine.mongo_auth.models import get_user_document
+        from django_mongoengine.mongo_auth.managers import get_user_document
         return get_user_document()
     except ImportError:
         return module_member('mongoengine.django.auth.User')
