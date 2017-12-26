@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased](https://github.com/python-social-auth/social-app-django-mongoengine/commits/master)
 
+### Changed
+
+- Updated `get_user_document` import
+
 ## [1.0.0](https://github.com/python-social-auth/social-app-django/releases/tag/1.0.0) - 2017-01-22
 
 ### Added
