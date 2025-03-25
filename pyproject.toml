@@ -28,9 +28,8 @@ keywords = [
   "auth",
   "mongoengine"
 ]
-name = "social-auth-app-django-mongoengine"
 license-files = ["LICENSE"]
-name = "social-auth-storage-peewee"
+name = "social-auth-app-django-mongoengine"
 readme = "README.md"
 
 [project.urls]
