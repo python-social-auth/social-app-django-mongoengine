@@ -28,6 +28,7 @@ keywords = [
   "auth",
   "mongoengine"
 ]
+license = "BSD-3-Clause"
 license-files = ["LICENSE"]
 name = "social-auth-app-django-mongoengine"
 readme = "README.md"
