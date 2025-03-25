@@ -1,3 +1,0 @@
-social-auth-app-django >= 1.0.0
-social-auth-storage-mongoengine >= 1.0.0
--e git+git@github.com:MongoEngine/django-mongoengine.git#egg=django-mongoengine

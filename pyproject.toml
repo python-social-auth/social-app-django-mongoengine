@@ -1,0 +1,47 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=78.0.2"]
+
+[project]
+authors = [
+  {name = "Matias Aguirre", email = "matiasaguirre@gmail.com"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Topic :: Internet",
+  "Intended Audience :: Developers",
+  "Environment :: Web Environment",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3"
+]
+dependencies = [
+  "social-auth-app-django >= 1.0.0",
+  "social-auth-storage-mongoengine >= 1.0.0",
+  "django-mongoengine>= 0.3.3"
+]
+description = "Python Social Authentication, Mongoengine Django integration."
+dynamic = ["version"]
+keywords = [
+  "django",
+  "social",
+  "auth",
+  "mongoengine"
+]
+name = "social-auth-app-django-mongoengine"
+license-files = ["LICENSE"]
+name = "social-auth-storage-peewee"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/python-social-auth/social-app-django-mongoengine"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+  "social_django_mongoengine"
+]
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = {attr = "social_peewee.__version__"}
