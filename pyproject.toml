@@ -44,4 +44,4 @@ packages = [
 zip-safe = false
 
 [tool.setuptools.dynamic]
-version = {attr = "social_peewee.__version__"}
+version = {attr = "social_django_mongoengine.__version__"}
