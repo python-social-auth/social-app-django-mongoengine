@@ -46,7 +46,6 @@ zip-safe = false
 [tool.setuptools.dynamic]
 version = {attr = "social_django_mongoengine.__version__"}
 
-
 [tool.tomlsort]
 ignore_case = true
 sort_inline_arrays = true
