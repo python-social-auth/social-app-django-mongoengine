@@ -4,29 +4,29 @@ requires = ["setuptools>=78.0.2"]
 
 [project]
 authors = [
-  {name = "Matias Aguirre", email = "matiasaguirre@gmail.com"}
+  {email = "matiasaguirre@gmail.com", name = "Matias Aguirre"}
 ]
 classifiers = [
   "Development Status :: 4 - Beta",
-  "Topic :: Internet",
-  "Intended Audience :: Developers",
   "Environment :: Web Environment",
-  "Programming Language :: Python",
+  "Intended Audience :: Developers",
   "Programming Language :: Python :: 2.7",
-  "Programming Language :: Python :: 3"
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python",
+  "Topic :: Internet"
 ]
 dependencies = [
+  "django-mongoengine>= 0.3.3",
   "social-auth-app-django >= 1.0.0",
-  "social-auth-storage-mongoengine >= 1.0.0",
-  "django-mongoengine>= 0.3.3"
+  "social-auth-storage-mongoengine >= 1.0.0"
 ]
 description = "Python Social Authentication, Mongoengine Django integration."
 dynamic = ["version"]
 keywords = [
-  "django",
-  "social",
   "auth",
-  "mongoengine"
+  "django",
+  "mongoengine",
+  "social"
 ]
 license = "BSD-3-Clause"
 license-files = ["LICENSE"]
